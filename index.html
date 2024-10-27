@@ -32,6 +32,9 @@
             flex-grow: 1; /* 允许链接增长 */
             flex-basis: 10%; /* 基础大小 */
             min-width: 50px; /* 最小宽度 */
+            display: flex; /* 启用flex布局以对齐图标和文本 */
+            align-items: center; /* 垂直居中 */
+            justify-content: center; /* 水平居中 */
         }
         .navbar a:hover {
             background-color: #ddd;
@@ -53,19 +56,23 @@
             width: 100%;
             height: 100%;
         }
+        /* 图标样式 */
+        .icon {
+            width: 24px; /* 图标宽度 */
+            height: 24px; /* 图标高度 */
+            margin-right: 8px; /* 图标与文本之间的间距 */
+        }
     </style>
 </head>
 <body>
 
     <!-- 导航栏 -->
     <div class="navbar">
- <a href="https://www.baidu.com" target="_blank">
+        <a href="https://www.baidu.com" target="_blank">
             <img src="https://img.picui.cn/free/2024/10/27/671e01c00168d.png" alt="Baidu" class="icon"> 百度
         </a>
         <a href="https://www.google.com" target="_blank">谷歌</a>
-        <a href="https://www.baidu.com" target="_blank">百度</a>
-        <a href="https://www.google.com" target="_blank">谷歌</a>
-        <a href="https://www.baidu.com" target="_blank">百度</a>
+        <!-- 其他链接 -->
     </div>
   
     <!-- 中间间隔 -->
@@ -73,11 +80,7 @@
   
     <!-- 第二行导航栏 -->
     <div class="navbar">
-        <a href="https://www.google.com" target="_blank">谷歌</a>
-        <a href="https://www.baidu.com" target="_blank">百度</a>
-        <a href="https://www.google.com" target="_blank">谷歌</a>
-        <a href="https://www.baidu.com" target="_blank">百度</a>
-        <a href="https://www.google.com" target="_blank">谷歌</a>
+        <!-- 其他链接 -->
     </div>
 
     <!-- 主内容区 -->
