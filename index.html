@@ -14,14 +14,16 @@
         .navbar {
             background-color: #222; /* 设置为深灰色 */
             overflow: hidden;
+            display: flex; /* 使用flex布局 */
+            flex-wrap: wrap; /* 允许内容换行 */
         }
         .navbar a {
-            float: left;
             display: block;
             color: white;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
+            flex-basis: 100%; /* 每个链接占据整行 */
         }
         .navbar a:hover {
             background-color: #ddd;
@@ -51,10 +53,17 @@
     <div class="navbar">
         <a href="https://www.baidu.com" target="_blank">百度</a>
         <a href="https://www.google.com" target="_blank">谷歌</a>
+        <a href="https://www.baidu.com" target="_blank">百度</a>
+        <a href="https://www.google.com" target="_blank">谷歌</a>
+        <!-- 这里可以添加更多的导航链接 -->
+        <a href="https://www.example.com" target="_blank">示例网站</a>
+        <a href="https://www.baidu.com" target="_blank">百度</a>
+        <a href="https://www.google.com" target="_blank">谷歌</a>
+        <a href="https://www.baidu.com" target="_blank">百度</a>
+        <a href="https://www.google.com" target="_blank">谷歌</a>
     </div>
 
     <!-- 主内容区 -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/k69PDJjdU1M?si=cKQB9UBHSD-gR5Eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <div class="main-content">
         <h1>欢迎来到网站导航</h1>
         <p>这是一个简单的网站导航页面。</p>
